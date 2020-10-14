@@ -1,2 +1,6 @@
-# Realtime-Chat-App
+<h1>🔥 📣 RealtimeChatApp 🔥 📣</h1>
 I'm going to build a Realtime Chat Application - Socket.io, Node.js, and React.js
+<p><a href="https://github.com/barhouum7/Realtime-Chat-App"><img src="https://img.shields.io/badge/RealtimeChatApp-1.0-brightgreen.svg" alt="Version" data-canonical-src="https://img.shields.io/badge/RealtimeChatApp-1.0-brightgreen.svg?maxAge=259200" style="max-width:100%;"></a>
+<a href="https://github.com/barhouum7/Realtime-Chat-App"><img src="https://img.shields.io/badge/Release-Stable-orange.svg" alt="Stage" data-canonical-src="https://img.shields.io/badge/Release-Stable-orange.svg" style="max-width:100%;"></a>
+<!-- <a href="https://github.com/barhouum7/Realtime-Chat-App"><img src="https://img.shields.io/badge/Supported%20OS-Android%2FmacOS%2FLinux%2FWindows-brightgreengreen.svg" alt="Build" data-canonical-src="https://img.shields.io/badge/Supported%20OS-Android%2FmacOS%2FLinux%2FWindows-brightgreengreen.svg" style="max-width:100%;"></a> -->
+<a href="https://github.com/barhouum7/Realtime-Chat-App/blame/master/LICENSE"><img src="https://img.shields.io/packagist/l/doctrine/orm.svg" alt="Build" data-canonical-src="https://img.shields.io/packagist/l/doctrine/orm.svg" style="max-width:100%;"></a></p>
