@@ -1,0 +1,38 @@
+{
+  "name": "realtime-chat-app",
+  "version": "1.0.0",
+  "description": "RealTime Chat Application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "devStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barhouum7/Realtime-Chat-App.git"
+  },
+  "keywords": [
+    "realtime",
+    "chat",
+    "web",
+    "app",
+    "socket",
+    "MERN",
+    "stack",
+    "websockets"
+  ],
+  "author": "BHMBS Ibrahim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/barhouum7/Realtime-Chat-App/issues"
+  },
+  "homepage": "https://github.com/barhouum7/Realtime-Chat-App#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.5"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  }
+}
