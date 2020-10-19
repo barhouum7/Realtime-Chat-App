@@ -5,11 +5,14 @@ const http = require('http')
 
 const PORT = process.env.PORT || 5000
 
+const mainRouter = require('./router')
 
 const server = http.createServer(app)
 const io = socketIo(server)
 
-app.listen(PORT, (error) => {
+app.use(mainRouter)
+
+server.listen(PORT, (error) => {
     error ?
         console.log(`\nERROR! Something Went Wrong.\n`) :
         console.log(`\nServer is listening on PORT: ${PORT}\n`)
