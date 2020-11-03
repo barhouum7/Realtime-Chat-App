@@ -9,17 +9,20 @@ const Join = () => {
 
     return (
         <div className="joinOuterContainer">
-            <div className="joinInnerContainer">
-                <h1 className="heading">
-                    Join
+                <h1 className="heading-1">
+                    Hang out online with your favorite people on your favorite topics.
                 </h1>
+            <div className="joinInnerContainer">
+                <h2 className="heading-2">
+                    OPEN A CHAT ROOM NOW!
+                </h2>
                 <div>
-                    <input className="joinInput" type="text" placeholder="Name" onChange={(event) => {
+                    <input className="joinInput" type="text" placeholder="Name: John" onChange={(event) => {
                         setName(event.target.value)
                     }} />
                 </div>
                 <div>
-                    <input className="joinInput mt-20" type="text" placeholder="Room" onChange={(event) => {
+                    <input className="joinInput mt-20" type="text" placeholder="Room: JavaScript Talk" onChange={(event) => {
                         setRoom(event.target.value)
                     }} />
                 </div>
