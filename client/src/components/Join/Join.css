@@ -31,33 +31,56 @@ body {
     border-radius: 0;
     padding: 15px 20px;
     width: 100%;
+    outline-style: none;
+}
+
+.joinInput:focus {
+    border: 3px solid chartreuse;
 }
 
 .heading-1 {
-    color: white;
+    color: darkgray;
     width: 100vh;
+    font-family: cursive;
     font-size: 2.5em;
     padding-bottom: 10px;
     margin-right: 100px;
+    cursor: pointer;
 }
 
+
 .heading-2 {
-    color: white;
+    color: darkgray;
     font-size: 2.5em;
     padding-bottom: 10px;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid chartreuse;
+    cursor: pointer;
+}
+
+.heading-1:hover,
+.heading-2:hover {
+    color: chartreuse;
+    border-color: darkgray;
 }
 
 .button {
-    color: #fff !important;
+    color: #fff;
     text-transform: uppercase;
     text-decoration: none;
-    background: #2979FF;
+    background-color: dimgray;
     padding: 20px;
     border-radius: 5px;
     display: inline-block;
     border: none;
     width: 100%;
+    outline-style: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.button:hover {
+    background: yellowgreen;
+    color: black;
 }
 
 .mt-20 {
