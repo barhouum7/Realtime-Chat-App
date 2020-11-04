@@ -8,27 +8,30 @@ const Join = () => {
     const [room, setRoom] = useState('')
 
     return (
-        <div className="joinOuterContainer">
-                <h1 className="heading-1">
-                    Hang out online with your favorite people on your favorite topics.
-                </h1>
-            <div className="joinInnerContainer">
-                <h2 className="heading-2">
-                    OPEN A CHAT ROOM NOW!
-                </h2>
-                <div>
-                    <input className="joinInput" type="text" placeholder="Name: John" onChange={(event) => {
-                        setName(event.target.value)
-                    }} />
+        <div className="mainContainer">
+            <div className="logo"><img src="logo192.png" alt="Logo" /></div>
+            <div className="joinOuterContainer">
+                    <h1 className="heading-1">
+                        Hang out online with your favorite people on your favorite topics.
+                    </h1>
+                <div className="joinInnerContainer">
+                    <h2 className="heading-2">
+                        OPEN A CHAT ROOM NOW!
+                    </h2>
+                    <div>
+                        <input className="joinInput" type="text" placeholder="Name: John" onChange={(event) => {
+                            setName(event.target.value)
+                        }} />
+                    </div>
+                    <div>
+                        <input className="joinInput mt-20" type="text" placeholder="Room: JavaScript Talk" onChange={(event) => {
+                            setRoom(event.target.value)
+                        }} />
+                    </div>
+                    <Link onClick={ event => (!name || !room) ? event.preventDefault() : null } to={`/chat?name=${name}&room=${room}`}>
+                        <button className="button mt-20" type="submit">Sign In</button>
+                    </Link>
                 </div>
-                <div>
-                    <input className="joinInput mt-20" type="text" placeholder="Room: JavaScript Talk" onChange={(event) => {
-                        setRoom(event.target.value)
-                    }} />
-                </div>
-                <Link onClick={ event => (!name || !room) ? event.preventDefault() : null } to={`/chat?name=${name}&room=${room}`}>
-                    <button className="button mt-20" type="submit">Sign In</button>
-                </Link>
             </div>
         </div>
     )

@@ -3,23 +3,32 @@ body {
     font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
-}
-
-#root {
-    height: 100vh;
+    width: 95%;
+    background-color: #1A1A1D;
 }
 
 * {
     box-sizing: border-box;
 }
 
+.logo {
+    transform: translate(50px, 10px);
+    height: 0;
+}
+
+.logo img {
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+}
+
 .joinOuterContainer {
     display: flex;
     justify-content: center;
     text-align: center;
-    height: 100vh;
+    height: 93.9vh;
+    width: 100vw;
     align-items: center;
-    background-color: #1A1A1D;
 }
 
 .joinInnerContainer {
@@ -38,10 +47,14 @@ body {
     border: 3px solid chartreuse;
 }
 
+.heading-1,
+.heading-2 {
+    font-family: cursive;
+}
+
 .heading-1 {
     color: darkgray;
     width: 100vh;
-    font-family: cursive;
     font-size: 2.5em;
     padding-bottom: 10px;
     margin-right: 100px;
