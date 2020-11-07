@@ -15,8 +15,9 @@ const Chat = ({location}) => {
         setName(name)
         setRoom(room)
 
-        console.log(socket)
-    }, [location.search, ENDPOINT])
+        // console.log(socket)
+        socket.emit('join', {name, room})
+    }, [ENDPOINT, location.search])
 
     return (
         <h1>This is the Chat Component.</h1>
