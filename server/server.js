@@ -3,6 +3,8 @@ const app = express() /* Get the App Portion of Express */
 const socketIo = require('socket.io')
 const http = require('http')
 
+const {addUser, removeUser, getUser, getUsersInRoom} = require('./users.js')
+
 const PORT = process.env.PORT || 5000
 
 const mainRouter = require('./router')
@@ -11,10 +13,14 @@ const server = http.createServer(app)
 const io = socketIo(server)
 
 io.on('connection', (socket) => {
-    console.log('\n\n\tWe have a new connection!!!')
+    socket.on('join', ({name, room}, callback) => {
+        const {error, user} = addUser({id: socket.id, name, room})
+        if (error) return callback(error)
 
-    socket.on('join', ({name, room}) => {
-        console.log(name, room)
+        socket.emit('message', {user: 'admin', text: `${user.name}, welcome to the ${user.room} room.`})
+        socket.broadcast.to(user.room).emit('message', {user: 'admin', text: `${user.name}, has joined this room!`})
+
+        socket.join(user.room)
     })
 
     socket.on('disconnect', () => {
