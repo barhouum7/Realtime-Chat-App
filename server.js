@@ -1,3 +1,11 @@
+/* Here in order to load that Variable inside dotenv file
+    we just do a simple check If we are 
+    running in the production environment or Not... */
+    import dotENV from 'dotenv'
+    if (process.env.NODE_ENV !== 'production') {
+        dotENV.config()
+    }
+
 const express = require('express')
 const app = express() /* Get the App Portion of Express */
 const socketIo = require('socket.io')
@@ -49,6 +57,20 @@ io.on('connection', (socket) => {
 
 app.use(mainRouter)
 app.use(cors())
+
+if (process.env.NODE_ENV === 'production') {
+    // Serve the static files from the React app
+    // app.use(express.static(path.join(__dirname, 'client', 'build')));
+    app.use(express.static('client/build'))
+    // Handles any requests that don't match the ones in the routes
+    app.get('*', (req, res) => {
+        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
+    });
+
+    // app.get('*', (req, res) => {
+    //     res.sendFile(path.join(__dirname+'/client/build/index.html'))
+    // })
+}
 
 server.listen(PORT, (error) => {
     error ?
