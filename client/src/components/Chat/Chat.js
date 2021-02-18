@@ -2,7 +2,16 @@ import React, { useEffect, useState } from 'react'
 import queryString from 'query-string'
 import io from 'socket.io-client'
 
+// import Avatar from 'avataaars'
+
+import InfoBar from '../InfoBar/InfoBar'
+import Input from '../Input/Input'
+import ActiveUsers from '../ActiveUsers/ActiveUsers'
+import ActiveUser from '../ActiveUsers/ActiveUser/ActiveUser'
+import Messages from '../Messages/Messages'
+
 import './Chat.css'
+import '../../css/uiFont.css'
 
 let socket
 const Chat = ({location}) => {
@@ -20,15 +29,15 @@ const Chat = ({location}) => {
         setRoom(room)
 
         // console.log(socket)
-        socket.emit('join', {name, room}, () => {
-
+        socket.emit('join', {name, room}, (error) => {
+            if (error) alert('Something Went Wrong on Joining!\n'+error)
         })
 
-        return () => {
-            socket.emit('disconnect')
+        // return () => {
+        //     socket.emit('disconnect')
 
-            socket.off()
-        }
+        //     socket.off()
+        // }
     }, [ENDPOINT, location.search])
 
     useEffect(() => {
@@ -46,17 +55,35 @@ const Chat = ({location}) => {
         }
     }
 
-    console.log(message, messages)
-
+    // console.log(message, messages)
+    let numberImgs = 0
     return (
         <div className="outerContainer">
+                    {/* <img className="avatar" src="https://placeimg.com/100/100/people" alt="Users Avatar" /> */}
+                    <ActiveUser />
+                    {/* <div className="onlineIcon"><span className="dotIcon-1 icon-circle-full"></span></div> */}
+                    
+                    {/* <Avatar
+                        style={{width: '100px', height: '55px', margin: '0', padding: '0'}}
+                        avatarStyle='Circle'
+                        topType='LongHairMiaWallace'
+                        accessoriesType='Prescription02'
+                        hairColor='BrownDark'
+                        facialHairType='Blank'
+                        clotheType='Hoodie'
+                        clotheColor='PastelBlue'
+                        eyeType='Happy'
+                        eyebrowType='Default'
+                        mouthType='Smile'
+                        skinColor='Light'
+                    /> */}
             <div className="container">
-                <InfoBar />
-                {/* <input 
-                value={message} 
-                onChange={(event) => setMessage(event.target.value)}
-                onKeyPress={event => event.key === 'Enter' ? sendMessage(event) : null}
-                /> */}
+                <div className="infoBarContainer">
+                    <InfoBar room={room} name={name} />
+                    <ActiveUsers numberImgs={numberImgs+6} />
+                </div>
+                <Messages messages={messages} name={name} />
+                <Input message={message} setMessage={setMessage} sendMessage={sendMessage} />
             </div>
         </div>
     )
