@@ -11,12 +11,13 @@ const app = express() /* Get the App Portion of Express */
 const socketIo = require('socket.io')
 const http = require('http')
 const cors = require('cors')
+const path = require('path')
 
 const {addUser, removeUser, getUser, getUsersInRoom} = require('./users.js')
 
 const PORT = process.env.PORT || 5000
 
-const mainRouter = require('./router')
+// const mainRouter = require('./router')
 
 const server = http.createServer(app)
 const io = socketIo(server)
@@ -55,7 +56,7 @@ io.on('connection', (socket) => {
     })
 })
 
-app.use(mainRouter)
+// app.use(mainRouter)
 app.use(cors())
 
 if (process.env.NODE_ENV === 'production') {
