@@ -2,6 +2,7 @@ const express = require('express')
 const app = express() /* Get the App Portion of Express */
 const socketIo = require('socket.io')
 const http = require('http')
+const cors = require('cors')
 
 const {addUser, removeUser, getUser, getUsersInRoom} = require('./users.js')
 
@@ -47,6 +48,7 @@ io.on('connection', (socket) => {
 })
 
 app.use(mainRouter)
+app.use(cors())
 
 server.listen(PORT, (error) => {
     error ?
