@@ -1,7 +1,7 @@
 /* Here in order to load that Variable inside dotenv file
     we just do a simple check If we are 
     running in the production environment or Not... */
-    import dotENV from 'dotenv'
+    const dotENV = require('dotenv')
     if (process.env.NODE_ENV !== 'production') {
         dotENV.config()
     }
