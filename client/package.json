@@ -7,6 +7,7 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "avataaars": "^1.2.1",
+    "axios": "^0.21.1",
     "query-string": "^6.13.5",
     "react": "^16.14.0",
     "react-awesome-button": "^6.5.1",
@@ -24,6 +25,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "proxy": "http://localhost:5000",
   "eslintConfig": {
     "extends": "react-app"
   },
