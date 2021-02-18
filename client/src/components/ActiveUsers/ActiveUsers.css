@@ -1,0 +1,52 @@
+.activeUsers {
+    display: flex;
+    /* position: fixed; */
+    justify-content: center;
+    align-items: center;
+    /* top: 175px;
+    left: 450px; */
+    margin-top: -82px;
+    /* margin-bottom: 20px; */
+}
+
+.onlineUser {
+    display: flex;
+    /* position: fixed; */
+    justify-content: center;
+    align-items: center;
+    /* top: 175px;
+    left: 450px; */
+    /* margin-top: 1px; */
+    /* margin-bottom: 20px; */
+}
+
+.user {
+    position: relative;
+    background: blueviolet;
+    border: 2px blueviolet solid;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    padding: 0;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.blc {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin-top: -7px;
+    border-radius: 100%;
+}
+
+.circleDotIcon {
+    position: absolute;
+    top: 29px;
+    right: 15px;
+    z-index: 10;
+    color: green;
+    border-radius: 100%;
+    background: #fff;
+    padding: 0;
+}

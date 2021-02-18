@@ -1,0 +1,68 @@
+.avatarContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 59px;
+    right: 170px;
+    height: 79px;
+    border-radius: 100px;
+    overflow: hidden;
+    padding: 0;
+    border-bottom: 5px blueviolet solid;
+    /* background: blueviolet; */
+}
+
+/* .avatarContainer .avatar {
+    position: relative;
+    margin: 0;
+    padding: 0px;
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    margin-top: -6px;
+    border-radius: 100%;
+    border: 1px blueviolet solid;
+} */
+
+/* .activeUser {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 175px;
+    left: 450px;
+    margin-top: -80px;
+} */
+
+.currentUser {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 2px blueviolet solid;
+    border-top: 5px rgb(113, 111, 114) solid;
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    padding: 0;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+
+.circleDotIconImg {
+    position: absolute;
+    top: 45px;
+    right: 24px;
+    z-index: 10;
+    color: green;
+    border-radius: 100%;
+    background: #fff;
+    padding: 0;
+}
