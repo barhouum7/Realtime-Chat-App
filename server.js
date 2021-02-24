@@ -22,6 +22,9 @@ const PORT = process.env.PORT || 5000
 const server = http.createServer(app)
 const io = socketIo(server)
 
+// app.use(mainRouter)
+app.use(cors())
+
 io.on('connection', (socket) => {
     socket.on('join', ({name, room}, callback) => {
         const {error, user} = addUser({id: socket.id, name, room})
@@ -55,9 +58,6 @@ io.on('connection', (socket) => {
         }
     })
 })
-
-// app.use(mainRouter)
-app.use(cors())
 
 if (process.env.NODE_ENV === 'production') {
     // Serve the static files from the React app
