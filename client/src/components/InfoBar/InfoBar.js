@@ -13,8 +13,8 @@ const InfoBar = ({room, name}) => {
                 </div>
                 
                 <div className="iconsContainer">
-                    <a href="#!"><i className="callIcon icon-call"></i></a>
-                    <a href="#!"><i className="callIcon icon-video-camera"></i></a>
+                    <i className="callIcon icon-call"></i>
+                    <i className="callIcon icon-video-camera"></i>
                 </div>
             </div>
     )

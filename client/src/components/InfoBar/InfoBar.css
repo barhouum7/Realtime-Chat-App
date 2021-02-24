@@ -28,6 +28,7 @@
     margin: 0;
     padding: 0;
     font-size: x-large;
+    cursor: pointer;
 }
 
 .dotIcon {
@@ -49,6 +50,7 @@
 .callIcon {
     color: blueviolet;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 a {
