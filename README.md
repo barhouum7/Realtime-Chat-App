@@ -8,8 +8,12 @@
 
 ###### This is a Realtime Chat Application called Students-Cyber-Space developed using Socket.io, Node.js, and React.js
 
-<h2>Screenshots</h2>
+###### Have a look at the live Demo: https://students-cyber-space.herokuapp.com/
 
+<h2>Demo:</h2>
+<a href="#"><img src="client/src/img/Demo/ChatApp.gif" alt="Watch the demo" width="700" height="370"></a>
+
+### Responsive on devises ✔🚀
 
 <h2>BUG ?</h2>
 <ul><li>Go to the <a href="https://github.com/barhouum7/Realtime-Chat-App/issues">issue</a> section</li></ul>
