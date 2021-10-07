@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-import { AwesomeButton, AwesomeButtonSocial } from 'react-awesome-button'
+import { AwesomeButton } from 'react-awesome-button'
 import "react-awesome-button/dist/styles.css"
 import 'react-awesome-button/dist/themes/theme-rickiest.css'
 
@@ -13,13 +13,18 @@ const Join = () => {
 
     return (
         <div className="mainContainer">
-            <div className="logo"><img src="logo192.png" alt="Logo" /></div>
+            
+            <a href="https://cityivast.co.uk/">
+                <div className="logo"><img src="logo/logo(2).png" alt="Logo" />
+            </div>
+            </a>
+            
             <div className="joinOuterContainer">
                     <h1 className="heading-1">
-                        Hang out online with your favorite people on your favorite topics.
+                        Hang out online with your co-workers on <span className="hvr-bounce-to-right">CITY I-VAST</span> online chat rooms.
                     </h1>
                 <div className="joinInnerContainer">
-                    <h2 className="heading-2">
+                    <h2 className="heading-2 hvr-bounce-to-right">
                         OPEN A CHAT ROOM NOW!
                     </h2>
                     <div>
@@ -46,6 +51,7 @@ const Join = () => {
                     </Link>
                 </div>
             </div>
+            <img className="my-signature" src="logo/my-signature.png" alt="My Signature" />
         </div>
     )
 }
