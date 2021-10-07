@@ -59,6 +59,7 @@ const Chat = ({location}) => {
     let numberImgs = 0
     return (
         <div className="outerContainer">
+            <div className="chat-room-logo"><img src="logo/logo(2).png" alt="Logo In Chat Room" /></div>
                     {/* <img className="avatar" src="https://placeimg.com/100/100/people" alt="Users Avatar" /> */}
                     <ActiveUser />
                     {/* <div className="onlineIcon"><span className="dotIcon-1 icon-circle-full"></span></div> */}

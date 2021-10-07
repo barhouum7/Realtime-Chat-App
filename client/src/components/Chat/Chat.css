@@ -3,9 +3,30 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #1A1A1D;
+    /* background-color: #1A1A1D; */
     flex-direction: column;
     flex-wrap: wrap;
+    background: #360033;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #0b8793, #360033);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #0b8793, #360033);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+.chat-room-logo {
+    /* transform: translate(50px, 10px); */
+    /* height: 0; */
+    margin-bottom: -80px;
+}
+
+.chat-room-logo img {
+    margin-top: -30px;
+    margin-bottom: 10px;
+    /* margin-left: -630px; */
+    width: 300px;
+    height: 100px;
 }
 
 .infoBarContainer {
