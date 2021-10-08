@@ -12,7 +12,7 @@ const Join = () => {
     const [room, setRoom] = useState('')
 
     return (
-        <div className="mainContainer">
+        <>
             
             <a href="https://cityivast.co.uk/">
                 <div className="logo"><img src="logo/logo(2).png" alt="Logo" />
@@ -52,7 +52,7 @@ const Join = () => {
                 </div>
             </div>
             <img className="my-signature" src="logo/my-signature.png" alt="My Signature" />
-        </div>
+        </>
     )
 }
 
