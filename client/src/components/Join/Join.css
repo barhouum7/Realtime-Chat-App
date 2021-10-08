@@ -4,6 +4,7 @@ body {
     padding: 0;
     margin: 0;
     /* width: 90%; */
+    height: 100vh;
     /* background-color: #1A1A1D; */
     color: #fff;
     background: #360033;
@@ -126,26 +127,98 @@ body {
     color: black;
 }
 
+button:focus {
+    outline: 0;
+}
+
 .mt-20 {
     margin-top: 20px;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+
+    body {
+        background: none;
+        font-size: 85px;
+        zoom: 50%;
+        width: 100vw;
+    }
+
     .joinOuterContainer {
-        height: 100%;
+        width: 170vh;
+        font-size: 14px;
+        margin-top: 210px;
+        margin-left: 23px;
     }
 
     .joinInnerContainer {
-        width: 90%;
+        width: 70%;
+    }
+
+    .my-signature {
+        margin-left: 30px;
+        margin-bottom: -105px;
+        width: 70%;
+        height: 20%;
+    }
+
+    .logo img {
+        margin-top: 1px;
+        width: 500px;
+        height: 130px;
+        margin-bottom: -50px;
+        margin-left: -60px;
     }
 
 
 }
 
-button:focus {
-    outline: 0;
+@media (min-width: 480px) and (max-width: 600px) {
+
+    body {
+        height: 140vh;
+        zoom: 10%;
+    }
 }
 
+@media (min-width: 600px) and (max-width: 779px) {
+
+    body {
+        height: 130vh;
+        zoom: 80%;
+    }
+
+    .joinOuterContainer {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        height: 119.5vh;
+        width: 100vw;
+        align-items: center;
+        zoom: 90%;
+        margin-left: 202px;
+        margin-bottom: -10px;
+    }
+
+    .my-signature {
+        margin-left: 235px;
+        margin-top: 0px;
+        width: 20%;
+        height: 20%;
+    }
+}
+
+@media (min-width: 779px) and (max-width: 980px) {
+    body {
+        height: 120vh;
+    }
+}
+
+@media (min-width: 980px) and (max-width: 1200px) {
+    body {
+        height: 110vh;
+    }
+}
 
 /* ********************************************************************************** */
 
