@@ -4,7 +4,7 @@ body {
     padding: 0;
     margin: 0;
     /* width: 90%; */
-    height: 100vh;
+    height: 115%;
     /* background-color: #1A1A1D; */
     color: #fff;
     background: #360033;
@@ -139,13 +139,13 @@ button:focus {
 
     body {
         background: none;
-        font-size: 85px;
-        zoom: 50%;
-        width: 100vw;
+    font-size: 85px;
+    zoom: 50%;
+    height: 100vh;
     }
 
     .joinOuterContainer {
-        width: 170vh;
+        width: 160vh;
         font-size: 14px;
         margin-top: 210px;
         margin-left: 23px;
@@ -157,8 +157,8 @@ button:focus {
 
     .my-signature {
         margin-left: 30px;
-        margin-bottom: -105px;
-        width: 70%;
+        margin-bottom: -130px;
+        width: 55%;
         height: 20%;
     }
 
@@ -184,7 +184,7 @@ button:focus {
 @media (min-width: 600px) and (max-width: 779px) {
 
     body {
-        height: 130vh;
+        height: 105%;
         zoom: 80%;
     }
 
@@ -210,13 +210,13 @@ button:focus {
 
 @media (min-width: 779px) and (max-width: 980px) {
     body {
-        height: 120vh;
+        height: 100%;
     }
 }
 
 @media (min-width: 980px) and (max-width: 1200px) {
     body {
-        height: 110vh;
+        height: 100%;
     }
 }
 
