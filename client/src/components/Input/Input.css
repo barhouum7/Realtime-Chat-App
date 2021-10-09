@@ -5,6 +5,7 @@
 .input {
     display: flex;
     flex-direction: row;
+    background: rgb(233, 232, 232);
 }
 
 
@@ -24,11 +25,9 @@
 }
 
 .sendMessageIcon {
-    display: flex;
-    position: fixed;
-    left: 58%;
-    top: 89%;
+    margin-top: 15px;
+    margin-right: 10px;
     color: blueviolet !important;
-    font-size: 25px;
+    font-size: 35px;
     cursor: pointer;
 }
