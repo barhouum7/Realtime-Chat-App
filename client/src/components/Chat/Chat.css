@@ -65,6 +65,11 @@
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+
+    .chat-room-logo img {
+        margin-top: -20px;
+    }
+
     .outerContainer {
         height: 100%;
         margin-left: 25px;
@@ -76,7 +81,7 @@
     }
 
     .avatarContainer {
-        right: 70px;
+        right: 142px;
         width: 20%;
     }
 
