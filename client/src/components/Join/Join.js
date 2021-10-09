@@ -49,9 +49,9 @@ const Join = () => {
                         Sign In
                     </AwesomeButton>
                     </Link>
+                    <img className="my-signature" src="logo/my-signature.png" alt="My Signature" />
                 </div>
             </div>
-            <img className="my-signature" src="logo/my-signature.png" alt="My Signature" />
         </>
     )
 }
