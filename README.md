@@ -1,5 +1,5 @@
 <h1>🔥 📣 CityI-VAST-ChatSpace</h1>
-<p><a href="https://github.com/barhouum7/Realtime-Chat-App"><img src="https://img.shields.io/badge/StudentsCyberSpace-1.0-brightgreen.svg" alt="Version" data-canonical-src="https://img.shields.io/badge/RealtimeChatApp-1.0-brightgreen.svg?maxAge=259200" style="max-width:100%;"></a>
+<p><a href="https://github.com/barhouum7/Realtime-Chat-App"><img src="https://img.shields.io/badge/CityIVASTChatSpace-1.0-brightgreen.svg" alt="Version" data-canonical-src="https://img.shields.io/badge/RealtimeChatApp-1.0-brightgreen.svg?maxAge=259200" style="max-width:100%;"></a>
 <a href="https://github.com/barhouum7/Realtime-Chat-App"><img src="https://img.shields.io/badge/Release-Stable-brightgreen.svg" alt="Stage" data-canonical-src="https://img.shields.io/badge/Release-Stable-orange.svg" style="max-width:100%;"></a>
 <!-- <a href="https://github.com/barhouum7/Realtime-Chat-App"><img src="https://img.shields.io/badge/Supported%20OS-Android%2FmacOS%2FLinux%2FWindows-brightgreengreen.svg" alt="Build" data-canonical-src="https://img.shields.io/badge/Supported%20OS-Android%2FmacOS%2FLinux%2FWindows-brightgreengreen.svg" style="max-width:100%;"></a> -->
 <a href="https://github.com/barhouum7/Realtime-Chat-App/blame/master/LICENSE"><img src="https://img.shields.io/packagist/l/doctrine/orm.svg" alt="Build" data-canonical-src="https://img.shields.io/packagist/l/doctrine/orm.svg" style="max-width:100%;"></a></p>
@@ -11,7 +11,7 @@
 ###### Have a look at the live Demo: https://cityivast-chat-space.herokuapp.com/
 
 <h2>Demo:</h2>
-<a href="#"><img src="client/src/img/Demo/ChatApp.gif" alt="Watch the demo" width="700" height="370"></a>
+<a href="#"><img src="client/src/img/Demo/demo.gif" alt="Watch the demo" width="700" height="370"></a>
 
 ### Responsive on devises ✔🚀
 
