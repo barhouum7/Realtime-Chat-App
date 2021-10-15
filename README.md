@@ -1,14 +1,14 @@
-<h1>🔥 📣 Students-CyberSpace</h1>
+<h1>🔥 📣 CityI-VAST-ChatSpace</h1>
 <p><a href="https://github.com/barhouum7/Realtime-Chat-App"><img src="https://img.shields.io/badge/StudentsCyberSpace-1.0-brightgreen.svg" alt="Version" data-canonical-src="https://img.shields.io/badge/RealtimeChatApp-1.0-brightgreen.svg?maxAge=259200" style="max-width:100%;"></a>
 <a href="https://github.com/barhouum7/Realtime-Chat-App"><img src="https://img.shields.io/badge/Release-Stable-brightgreen.svg" alt="Stage" data-canonical-src="https://img.shields.io/badge/Release-Stable-orange.svg" style="max-width:100%;"></a>
 <!-- <a href="https://github.com/barhouum7/Realtime-Chat-App"><img src="https://img.shields.io/badge/Supported%20OS-Android%2FmacOS%2FLinux%2FWindows-brightgreengreen.svg" alt="Build" data-canonical-src="https://img.shields.io/badge/Supported%20OS-Android%2FmacOS%2FLinux%2FWindows-brightgreengreen.svg" style="max-width:100%;"></a> -->
 <a href="https://github.com/barhouum7/Realtime-Chat-App/blame/master/LICENSE"><img src="https://img.shields.io/packagist/l/doctrine/orm.svg" alt="Build" data-canonical-src="https://img.shields.io/packagist/l/doctrine/orm.svg" style="max-width:100%;"></a></p>
 
-<h2>🌟 <a href="https://github.com/barhouum7/Realtime-Chat-App/blame/master/LICENSE">Students-CyberSpace V1.0</a> 🌟</h2>
+<h2>🌟 <a href="https://github.com/barhouum7/Realtime-Chat-App/blame/master/LICENSE">CityI-VAST-ChatSpace V1.0</a> 🌟</h2>
 
-###### This is a Realtime Chat Application called Students-Cyber-Space developed using Socket.io, Node.js, and React.js
+###### This is a Real-time Chat Application for a UK company called City I-vast developed using Socket.io, Node.js, and React.js.
 
-###### Have a look at the live Demo: https://students-cyber-space.herokuapp.com/
+###### Have a look at the live Demo: https://cityivast-chat-space.herokuapp.com/
 
 <h2>Demo:</h2>
 <a href="#"><img src="client/src/img/Demo/ChatApp.gif" alt="Watch the demo" width="700" height="370"></a>
